@@ -17,7 +17,7 @@ class HomeBody extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Hello, World!",
+              "Hello,World!",
               style: TextStyle(
                 fontSize: 35,
                 fontWeight: FontWeight.bold,
