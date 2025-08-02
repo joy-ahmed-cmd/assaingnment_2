@@ -34,9 +34,16 @@ class HomeBody extends StatelessWidget {
                 backgroundColor: Colors.green, //fixedSize: Size(140, 20)
               ),
               onPressed: () {
-                ScaffoldMessenger.of(
-                  context,
-                ).showSnackBar(SnackBar(content: Text('Button Pressd!')));
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [Text('Button Pressd!'),],
+                    ),
+                    duration: Duration(seconds: 1),
+                    backgroundColor: Colors.indigo,
+                  ),
+                );
               },
               child: Text('Press Me'),
             ),
